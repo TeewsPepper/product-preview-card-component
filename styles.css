@@ -1,0 +1,132 @@
+:root {
+--DarkCyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+
+
+--VeryDdarkBlue: hsl(212, 21%, 14%);
+--DarkGrayishBlue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    
+}
+h1, h2 {
+    font-family: "Fraunces", serif;
+}
+
+.main-container {
+    width: 95%;
+    min-height: auto;
+    
+    padding-bottom: 1rem;
+    background-color: var(--White);
+    border-radius: .6rem ;
+    
+}
+.image-container img {
+    width: 100%;
+    border-radius: .6rem .6rem 0 0;
+}
+
+.text {
+    width: 89%;
+    margin: 2rem auto 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+}
+.text span {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .32rem;
+    color: var(--DarkGrayishBlue);
+}
+.text h1 {
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+.text p {
+    color: var(--DarkGrayishBlue);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.price {
+    width: 89%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.price h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--DarkCyan);
+}
+.price span {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: var(--DarkGrayishBlue);
+}
+.btn-container {
+ width: 100%;
+ margin: auto;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: auto;
+    padding: 1rem;
+    color: var(--White);
+    background-color: var(--DarkCyan);
+    border: none;
+    border-radius: .6rem;
+}
+.btn:hover {
+  background-color: hsl(158, 35%, 45%);
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .main-container {
+    max-width: 60rem;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  .image-container img {
+    width: 100%;
+    border-radius: .6rem 0 0 .6rem;
+  }
+  .text {
+    padding: 1rem 0 0;
+  }
+  .text span {
+    font-size: 1rem;
+  }
+  .text h1 {
+    font-size: 3.8rem;
+  }
+  .text p {
+    font-size: 1.3rem;
+  }
+}
+
